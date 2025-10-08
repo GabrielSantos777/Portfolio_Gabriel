@@ -39,8 +39,8 @@ const Projects = () => {
         "Supabase",
         "PostgreSQL",
         "Edge Functions",
-        "n8n (Automação de Workflows)",
-        "OCR (Processamento de Notas Fiscais)"
+        "n8n",
+        "OCR"
       ],
       githubUrl: "https://github.com/GabrielSantos777/planix",
       demoUrl: "https://planix.space/landing",

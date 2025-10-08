@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/avatar.jpg";
-import cvFile from "@/assets/Curriculo Gabriel Erick Santos.pdf";
+import cvFile from "@/assets/Curriculo_Gabriel_Erick_Santos.pdf";
 
 const Hero = () => {
   return (
