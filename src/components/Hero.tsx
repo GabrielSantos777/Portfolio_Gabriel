@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/avatar2.jpg";
+import cvFile from "@/assets/Curriculo Gabriel Erick Santos.pdf";
 
 const Hero = () => {
   return (
@@ -29,7 +30,7 @@ const Hero = () => {
                 asChild
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold neon-glow">
-                <a href="src\assets\Curriculo Gabriel Erick Santos.pdf" download className="flex items-center gap-2">
+                <a href={cvFile} download="Curriculo_Gabriel_Santos.pdf" className="flex items-center gap-2">
                   <Download size={20} />
                   Baixar CV
                 </a>
