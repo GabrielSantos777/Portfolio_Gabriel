@@ -9,7 +9,7 @@ const Contact = () => {
         
         <div className="max-w-2xl mx-auto text-center space-y-8 animate-fade-in">
           <p className="text-xl text-muted-foreground">
-            Quer conversar ou trabalhar comigo? Entre em contato!
+            Entre em contato!
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -18,7 +18,7 @@ const Contact = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold neon-glow w-full sm:w-auto"
             >
-              <a href="mailto:contato@batmandev.com" className="flex items-center">
+              <a href="mailto:gabrielsantos.erick@outlook.com" className="flex items-center">
                 <Mail className="mr-2 h-5 w-5" />
                 Enviar Email
               </a>
@@ -31,7 +31,7 @@ const Contact = () => {
               className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/GabrielSantos777"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -48,7 +48,7 @@ const Contact = () => {
               className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto"
             >
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/gabriel-santos-880200249"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"

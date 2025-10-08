@@ -12,10 +12,10 @@ const Hero = () => {
             <div className="space-y-2">
               <p className="text-primary font-mono text-sm md:text-base">Olá, eu sou</p>
               <h1 className="text-5xl md:text-7xl font-bold">
-                Batman Dev
+                Gabriel Santos
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Desenvolvedor Full Stack & Analista de Dados
+                Desenvolvedor Full Stack
               </p>
             </div>
             
@@ -28,9 +28,8 @@ const Hero = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold neon-glow"
-              >
-                <a href="/cv.pdf" download className="flex items-center gap-2">
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold neon-glow">
+                <a href="src\assets\Curriculo Gabriel Erick Santos.pdf" download className="flex items-center gap-2">
                   <Download size={20} />
                   Baixar CV
                 </a>
@@ -48,7 +47,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/GabrielSantos777"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -57,7 +56,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/gabriel-santos-880200249"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -66,7 +65,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:contato@batmandev.com"
+                href="mailto:gabrielsantos.erick@outlook.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >

@@ -34,7 +34,7 @@ const Header = () => {
             href="#hero"
             className="text-2xl font-bold neon-text hover:opacity-80 transition-opacity"
           >
-            &lt;Batman Dev /&gt;
+            &lt;Gabriel Santos /&gt;
           </a>
 
           {/* Desktop Navigation */}

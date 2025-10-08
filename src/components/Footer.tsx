@@ -8,12 +8,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Batman Dev — Todos os direitos reservados.
+            © {currentYear} Gabriel Santos — Todos os direitos reservados.
           </p>
           
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/GabrielSantos777"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-colors"
@@ -22,7 +22,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/gabriel-santos-880200249"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:contato@batmandev.com"
+              href="mailto:gabrielsantos.erick@outlook.com"
               className="text-primary hover:text-primary/80 transition-colors"
               aria-label="Email"
             >
