@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/avatar.jpg";
 
@@ -30,7 +30,10 @@ const Hero = () => {
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold neon-glow"
               >
-                <a href="#projects">Ver Projetos</a>
+                <a href="/cv.pdf" download className="flex items-center gap-2">
+                  <Download size={20} />
+                  Baixar CV
+                </a>
               </Button>
               <Button
                 asChild
