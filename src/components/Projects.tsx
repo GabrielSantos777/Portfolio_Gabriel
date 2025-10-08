@@ -2,8 +2,9 @@ import { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import planixCover from "@/assets/planix-cover.jpg";
-import opinionCover from "@/assets/opinion-cover.jpg";
+import planix from "@/assets/planix.jpeg";
+import opinion from "@/assets/opinion.jpg";
+import skysync from "@/assets/skysync.jpg";
 
 interface Project {
   id: string;
@@ -25,9 +26,22 @@ const Projects = () => {
       id: "planix",
       title: "Planix",
       description: "Plataforma completa de gestão financeira pessoal e empresarial que permite aos usuários controlar suas finanças de forma inteligente e automatizada.",
-      fullDescription: "O sistema oferece controle detalhado de despesas, receitas, investimentos e cartões de crédito, com relatórios avançados e integração com WhatsApp para registro rápido de transações. <br> Controle de múltiplas contas bancárias (corrente, poupança, investimentos).Sistema de metas financeirasDashboard interativo com gráficos em tempo realBot inteligente para consultas rápidas e Registro de despesas e receitas por mensagemAutomação via n8nBot inteligente para consultas rápida. Tecnologias Utilizadas Frontend: React com TypeScript Vite Tailwind CSS shadcn/ui Recharts React Query Backend: Supabase PostgreSQL Edge Functions Row Level Security Automação e Integrações: n8n (automação de workflows) OCR para processamento de notas fiscais Acesse: https://planix.space/landing",
-      image: planixCover,
-      technologies: ["React", "PHP", "SQL", "Power BI", "Bootstrap"],
+      fullDescription: "O sistema oferece controle detalhado de despesas, receitas, investimentos e cartões de crédito, com relatórios avançados e integração com WhatsApp para registro rápido de transações.\n • Controle de múltiplas contas bancárias (corrente, poupança, investimentos).\n • Sistema de metas financeiras. \n • Dashboard interativo com gráficos em tempo real. \n • Bot inteligente para consultas rápidas e Registro de despesas e receitas por mensagem. \n • Automação via n8nBot inteligente para consultas rápida. \n Acesse: https://planix.space/landing",
+      image: planix,
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Recharts",
+        "React Query",
+        "Supabase",
+        "PostgreSQL",
+        "Edge Functions",
+        "n8n (Automação de Workflows)",
+        "OCR (Processamento de Notas Fiscais)"
+      ],
       githubUrl: "https://github.com/GabrielSantos777/planix",
       demoUrl: "https://planix.space/landing",
       featured: true,
@@ -35,22 +49,21 @@ const Projects = () => {
     {
       id: "opinion",
       title: "OpiniON",
-      description: "Análise de sentimentos de comentários usando Python e NLP.",
-      fullDescription: "OpiniON é uma ferramenta de análise de sentimentos que utiliza técnicas de Processamento de Linguagem Natural (NLP) para extrair insights de comentários e reviews. Desenvolvido em Python com bibliotecas como NLTK e scikit-learn, oferece visualizações interativas dos resultados.",
-      image: opinionCover,
-      technologies: ["Python", "NLP", "Machine Learning", "Flask"],
-      githubUrl: "https://github.com",
+      description: "O OpiniON é um projeto desenvolvido para coletar, analisar e visualizar comentários de produtos disponíveis online",
+      fullDescription: "OpiniON é uma ferramenta de análise de sentimentos que utiliza técnicas de Processamento de Linguagem Natural (NLP) para extrair insights de comentários e reviews. O OpiniON realiza as seguintes etapas: \n • Coleta de Comentários: Automatiza a extração de avaliações de produtos em plataformas online, no caso foi usado o site da Amazon.\n • Análise de Sentimentos: Utiliza uma API do Gemini para classificar os comentários em três categorias: Positivo, Neutro ou Negativo. \n • Armazenamento de Dados: Salva os comentários e seus respectivos sentimentos em um banco de dados SQLite. \n • Visualização Gráfica: Gera um gráfico de barras para representar a distribuiçãodos sentimentos dos comentários coletados;",
+      image: opinion,
+      technologies: ["Python", "SQLite", "Selenium", "Matplotlib", "Gemini", "Regex"],
+      githubUrl: "https://github.com/GabrielSantos777/OpiniON",
       featured: true,
     },
     {
-      id: "portfolio",
-      title: "Portfolio Website",
-      description: "Site pessoal moderno e responsivo.",
-      fullDescription: "Portfolio profissional desenvolvido com React e Tailwind CSS, apresentando projetos e habilidades de forma moderna e interativa.",
-      image: planixCover,
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
-      githubUrl: "https://github.com",
-      demoUrl: "https://demo.com",
+      id: "skysync",
+      title: "SkySync",
+      description: "SkySync é uma aplicação web que exibe a condição climática de todas as cidades, estados ou países do mundo..",
+      fullDescription: "SkySync é uma aplicação web que exibe a condição climática de todas as cidades, estados ou países do mundo. Obtendo tanto os dados da temperatura atual, velocidade do vento e o nível de umidade. \n O SkySync realiza as seguintes funções: \n • Coleta da Temperatura atual. \n • Coleta da Velocidade do vento. \n • Nível de umidade;",
+      image: skysync,
+      technologies: ["HTLM5", "CSS3", "JavaScript", "Open Weather API"],
+      githubUrl: "https://github.com/GabrielSantos777/SkySync",
       featured: false,
     },
   ];

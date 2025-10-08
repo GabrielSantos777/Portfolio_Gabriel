@@ -65,30 +65,30 @@ const Contact = () => {
               <div className="space-y-2 text-muted-foreground">
                 <p className="flex items-center justify-center gap-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:contato@batmandev.com" className="hover:text-primary transition-colors">
-                    contato@batmandev.com
+                  <a href="mailto:gabrielsantos.erick@outlook.com" className="hover:text-primary transition-colors">
+                    gabrielsantos.erick@outlook.com
                   </a>
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <Github className="h-4 w-4 text-primary" />
                   <a
-                    href="https://github.com"
+                    href="https://github.com/GabrielSantos777"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"
                   >
-                    github.com/batmandev
+                    github.com/GabrielSantos777
                   </a>
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <Linkedin className="h-4 w-4 text-primary" />
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/gabriel-santos-880200249"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"
                   >
-                    linkedin.com/in/batmandev
+                    linkedin.com/in/gabriel-santos
                   </a>
                 </p>
               </div>
