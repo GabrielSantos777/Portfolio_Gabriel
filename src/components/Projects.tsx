@@ -24,12 +24,12 @@ const Projects = () => {
     {
       id: "planix",
       title: "Planix",
-      description: "Sistema de gestão financeira pessoal com automação e relatórios.",
-      fullDescription: "Planix é uma aplicação completa para gestão financeira pessoal que oferece automação de processos, relatórios detalhados e insights sobre seus gastos. Desenvolvido com React e PHP, utiliza banco de dados SQL para armazenamento seguro e Power BI para visualizações avançadas.",
+      description: "Plataforma completa de gestão financeira pessoal e empresarial que permite aos usuários controlar suas finanças de forma inteligente e automatizada.",
+      fullDescription: "O sistema oferece controle detalhado de despesas, receitas, investimentos e cartões de crédito, com relatórios avançados e integração com WhatsApp para registro rápido de transações. <br> Controle de múltiplas contas bancárias (corrente, poupança, investimentos).Sistema de metas financeirasDashboard interativo com gráficos em tempo realBot inteligente para consultas rápidas e Registro de despesas e receitas por mensagemAutomação via n8nBot inteligente para consultas rápida. Tecnologias Utilizadas Frontend: React com TypeScript Vite Tailwind CSS shadcn/ui Recharts React Query Backend: Supabase PostgreSQL Edge Functions Row Level Security Automação e Integrações: n8n (automação de workflows) OCR para processamento de notas fiscais Acesse: https://planix.space/landing",
       image: planixCover,
       technologies: ["React", "PHP", "SQL", "Power BI", "Bootstrap"],
-      githubUrl: "https://github.com",
-      demoUrl: "https://demo.com",
+      githubUrl: "https://github.com/GabrielSantos777/planix",
+      demoUrl: "https://planix.space/landing",
       featured: true,
     },
     {
@@ -51,15 +51,6 @@ const Projects = () => {
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       githubUrl: "https://github.com",
       demoUrl: "https://demo.com",
-      featured: false,
-    },
-    {
-      id: "automation",
-      title: "Automação n8n",
-      description: "Workflows de automação para processos empresariais.",
-      fullDescription: "Conjunto de workflows desenvolvidos em n8n para automatizar processos empresariais, integrando diferentes APIs e serviços.",
-      image: opinionCover,
-      technologies: ["n8n", "APIs", "JavaScript"],
       featured: false,
     },
   ];
