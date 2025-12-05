@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import planix from "@/assets/planix.jpeg";
 import opinion from "@/assets/opinion.jpg";
 import skysync from "@/assets/skysync.jpg";
+import dashboard_olist from "@/assets/dashboard_olist.jpg";
 
 interface Project {
   id: string;
@@ -47,6 +48,26 @@ const Projects = () => {
       featured: true,
     },
     {
+      id: "olist-sales-analysis",
+      title: "Olist E-commerce Analytics",
+      description: "Projeto completo de Business Intelligence (BI) e Análise Preditiva aplicado ao dataset de vendas do E-commerce Olist, focado em otimização logística e segmentação de clientes.",
+      fullDescription: "O sistema transformou nove arquivos brutos de transação em insights acionáveis, culminando em um Dashboard interativo. A análise incluiu o ciclo completo de ETL, Feature Engineering e modelagem estratégica.\n • Segmentação RFM: Identificação e classificação de clientes de alto valor (VIPs) e clientes em risco (Churn Risk).\n • Análise de Tendência: Visualização da sazonalidade de vendas e identificação dos picos de Q4 (Black Friday).\n • Performance Logística: Cálculo do Tempo de Entrega Real vs. Estimado para otimizar a operação.\n • KPIs Robustos: Criação de medidas DAX ultra-seguras (usando SUMX) para garantir a precisão de KPIs como Receita Total (corrigida de R$ 16,4 Milhões) e Ticket Médio, resolvendo problemas complexos de duplicação de dados.\n • ETL e Limpeza de Dados: Consolidação e tratamento de 97.500 pedidos únicos com Python/Pandas.",
+      image: dashboard_olist,
+      technologies: [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Jupyter Notebook",
+        "Power BI",
+        "DAX (Data Analysis Expressions)",
+        "Análise RFM (Recência, Frequência, Valor Monetário)",
+        "Feature Engineering",
+        "Git",
+        "Data Storytelling"
+      ],
+      featured: true,
+    },
+    {
       id: "opinion",
       title: "OpiniON",
       description: "O OpiniON é um projeto desenvolvido para coletar, analisar e visualizar comentários de produtos disponíveis online",
@@ -75,7 +96,7 @@ const Projects = () => {
     <section id="projects" className="bg-card/50">
       <div className="section-container">
         <h2 className="section-title">Projetos</h2>
-        
+
         {/* Featured Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-primary mb-8 text-center">Destaques</h3>
@@ -95,13 +116,13 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-60"></div>
                 </div>
-                
+
                 <div className="p-6 space-y-4">
                   <h4 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h4>
                   <p className="text-muted-foreground">{project.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
@@ -136,7 +157,7 @@ const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                
+
                 <div className="p-4">
                   <h4 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors mb-2">
                     {project.title}
@@ -161,18 +182,18 @@ const Projects = () => {
                     {selectedProject.fullDescription}
                   </DialogDescription>
                 </DialogHeader>
-                
+
                 <div className="space-y-6">
                   <img
                     src={selectedProject.image}
                     alt={selectedProject.title}
                     className="w-full rounded-lg"
                   />
-                  
+
                   <div>
                     <h4 className="font-semibold mb-2">Tecnologias:</h4>
                     <div className="flex flex-wrap gap-2">
-                      {selectedProject.technologies.map((tech) => (
+                      {selectedProject.technologies.map((tech: any) => (
                         <span
                           key={tech}
                           className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/20"
@@ -182,7 +203,7 @@ const Projects = () => {
                       ))}
                     </div>
                   </div>
-                  
+
                   <div className="flex gap-4">
                     {selectedProject.githubUrl && (
                       <Button
