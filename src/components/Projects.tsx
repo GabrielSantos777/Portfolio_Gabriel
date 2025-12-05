@@ -65,6 +65,8 @@ const Projects = () => {
         "Git",
         "Data Storytelling"
       ],
+      githubUrl: "https://github.com/GabrielSantos777/Analise_dados_ecommerce_Olist",
+      demoUrl: "",
       featured: true,
     },
     {
