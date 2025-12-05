@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import planix from "@/assets/planix.jpeg";
 import opinion from "@/assets/opinion.jpg";
 import skysync from "@/assets/skysync.jpg";
-import dashboard_olist from "@/assets/dashboard_olist.jpg";
+import dashboard_olist from "@/assets/dashboard_olist.jpeg";
 
 interface Project {
   id: string;
