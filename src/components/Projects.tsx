@@ -78,7 +78,7 @@ const Projects = () => {
         \n • **Módulo de Sistema em Go (Golang):** Implementação de um microserviço em Go para consultas rápidas ao banco e busca do valor mais recente, demonstrando proficiência em linguagens de sistema. \n \
         \n • **Análise de Anomalias:** Lógica de negócio em Python que calcula a Média Móvel dos últimos 7 dias e dispara alertas se a cotação ultrapassar um threshold de variação. \n \
         \n • **Dashboard Interativo (Plotly Dash):** Construção de um *frontend* web puramente em Python, conectado ao PostgreSQL, para visualização em tempo real da série temporal histórica.",
-      image: 'finance-dashboard-image.png', // Substitua pelo link ou variável da imagem do seu dashboard Dash
+      image: 'dashboard_fluxGuard.png',
       technologies: [
         "Python",
         "Go (Golang)",
