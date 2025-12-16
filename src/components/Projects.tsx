@@ -70,6 +70,30 @@ const Projects = () => {
       featured: true,
     },
     {
+      id: "financial-data-pipeline",
+      title: "Pipeline de Dados Full-Stack e Monitoramento Financeiro",
+      description: "Solução completa de Engenharia de Dados para coleta, armazenamento e monitoramento automatizado de séries temporais de cotação de moedas (USD/BRL).",
+      fullDescription: "O projeto focou em construir um sistema de dados pronto para produção, integrando tecnologias de backend e frontend. \n \
+        \n • **Pipeline ETL Automatizada:** Processo agendado em Python/Pandas que extrai dados de API externa e os carrega de forma robusta no PostgreSQL. \n \
+        \n • **Módulo de Sistema em Go (Golang):** Implementação de um microserviço em Go para consultas rápidas ao banco e busca do valor mais recente, demonstrando proficiência em linguagens de sistema. \n \
+        \n • **Análise de Anomalias:** Lógica de negócio em Python que calcula a Média Móvel dos últimos 7 dias e dispara alertas se a cotação ultrapassar um threshold de variação. \n \
+        \n • **Dashboard Interativo (Plotly Dash):** Construção de um *frontend* web puramente em Python, conectado ao PostgreSQL, para visualização em tempo real da série temporal histórica.",
+      image: 'finance-dashboard-image.png', // Substitua pelo link ou variável da imagem do seu dashboard Dash
+      technologies: [
+        "Python",
+        "Go (Golang)",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "Plotly Dash",
+        "Pandas",
+        "Agendamento (Cron/Scheduler)",
+        "ETL Automation"
+      ],
+      githubUrl: "https://github.com/GabrielSantos777/FluxGuard_financeira_pipeline",
+      demoUrl: "",
+      featured: true,
+    },
+    {
       id: "opinion",
       title: "OpiniON",
       description: "O OpiniON é um projeto desenvolvido para coletar, analisar e visualizar comentários de produtos disponíveis online",
