@@ -12,7 +12,7 @@ Portfolio pessoal desenvolvido em React para apresentar projetos de Full Stack, 
 - React Router DOM
 - TanStack Query
 
-## Funcionalidades
+## Funcionalidade
 
 - Secoes completas de apresentacao: Hero, Sobre, Skills, Projetos, Artigos e Contato
 - Catalogo de projetos com filtros por categoria
