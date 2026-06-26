@@ -35,7 +35,7 @@ src/
 
 ## Licenca
 
-Este projeto esta licenciado sob a **MIT License**.
+Estes projeto esta licenciado sob a **MIT License**.
 
 Voce pode usar, copiar, modificar e distribuir este software, mantendo o aviso de copyright e de permissao.
 
