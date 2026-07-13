@@ -7,6 +7,7 @@ import saasPulseImage from "@/assets/saasPulse.jpg";
 import pipelineImage from "@/assets/finance_dashboard.png";
 import opinionImage from "@/assets/opinion.jpg";
 import skysyncImage from "@/assets/skysync.jpg";
+import gitFlowImage from "@/assets/gitflow_visualizer.png"
 
 export type NavSection = {
   label: string;
@@ -618,6 +619,35 @@ export const projects: PortfolioProject[] = [
       "https://github.com/GabrielSantos777/FluxGuard_financeira_pipeline",
     cardImage: pipelineImage,
     modalMedia: { type: "image", src: "/project-media/pipeline-detail.svg" },
+  },
+  {
+    id: "git-flow",
+    title: "Git Flow Visualizer",
+    subtitle: "// estratégias de branching, visuais",
+    category: "Frontend - Dev Tooling",
+    emoji: "",
+    description:
+      "Ferramenta visual e interativa que ensina estratégias de branching do Git com grafos animados.",
+    summary:
+      "Visualizador interativo de estratégias de branching (GitHub Flow, GitFlow e trunk-based), construído em camadas: estado append-only, engine de layout puro e renderização SVG animada.",
+    metrics: [
+      { value: "3", label: "Estratégias" },
+      { value: "SVG", label: "Grafo animado" },
+      { value: "3 ops", label: "Merge · rebase · pick" },
+    ],
+    features: [
+      "Grafo de commits animado em SVG, com entrada suave de nós e conexões.",
+      "Simulação interativa de merge, rebase e cherry-pick como transformações puras de estado.",
+      "Toggle entre GitHub Flow, GitFlow e trunk-based com presets prontos.",
+      "Arquitetura em camadas separando modelo de dados, layout e apresentação.",
+      "Painel didático com o quando usar e os trade-offs de cada estratégia.",
+    ],
+    tech: ["React", "SVG", "CSS Animations", "Vite", "Docker"],
+    filters: ["fullstack"],
+    isFeatured: true,
+    githubUrl: "https://github.com/EuSouGabriell/git-flow-visualizer",
+    cardImage: gitFlowImage,
+    modalMedia: { type: "image", src: "/project-media/gitflow_visualizer.png" },
   },
   {
     id: "opinion",
